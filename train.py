@@ -99,7 +99,7 @@ def _get_loss_criterion(loss_str, weight=None):
     whether to apply an element-wise Sigmoid on the network output
     """
     LOSSES = ['ce', 'bce', 'wce', 'dice']
-    //assert loss_str in LOSSES, f'Invalid loss string: {loss_str}'
+    #assert loss_str in LOSSES, f'Invalid loss string: {loss_str}'
     print(loss_str)
 
     if loss_str == 'bce':
