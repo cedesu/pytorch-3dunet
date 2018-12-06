@@ -146,7 +146,7 @@ def main():
     model = model.to(device)
 
     # Log the number of learnable parameters
-    logger.info(f'Number of learnable params {get_number_of_learnable_parameters(model)}')
+    #logger.info(f'Number of learnable params {get_number_of_learnable_parameters(model)}')
 
     # Create accuracy metric
     accuracy_criterion = _get_accuracy_criterion(not final_sigmoid)
@@ -163,8 +163,8 @@ def main():
     val_patch = tuple(args.val_patch)
     val_stride = tuple(args.val_stride)
 
-    logger.info(f'Train patch/stride: {train_patch}/{train_stride}')
-    logger.info(f'Val patch/stride: {val_patch}/{val_stride}')
+    #logger.info(f'Train patch/stride: {train_patch}/{train_stride}')
+    #logger.info(f'Val patch/stride: {val_patch}/{val_stride}')
 
     loaders = _get_loaders(train_path, val_path, label_dtype=label_dtype, train_patch=train_patch,
                            train_stride=train_stride, val_patch=val_patch, val_stride=val_stride)
